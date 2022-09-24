@@ -3,7 +3,7 @@
 class DisjointSet:
     def __init__(self, size):
         self.root = [i for i in range(size)]
-        self.rank = [1] * size
+        self.rank = [0] * size
 
     # The find function here is the same as that in the disjoint set with path compression.
     def find(self, x):
